@@ -39,11 +39,11 @@
     
         // Use Promise.all to wait for all models to load
         Promise.all([
-            loadPLY('left_kidney.ply', 0.3, [0.612, 0.612, 0.612]),
-            loadPLY('right_kidney_without_tumor.ply', 0.3, [0.612, 0.612, 0.612]),
-            loadPLY('tumor.ply', 0.75, [0.294, 0.922, 0.557]),
-            loadPLY('left_urinary.ply', 1, [0.957, 0.773, 0.0]),
-            loadPLY('artery_mask.ply', 1, [0.871, 0.165, 0.224]),
+            loadPLY('https://skpathak.github.io/subject04/left_kidney.ply', 0.3, [0.612, 0.612, 0.612]),
+            loadPLY('https://skpathak.github.io/subject04/right_kidney_without_tumor.ply', 0.3, [0.612, 0.612, 0.612]),
+            loadPLY('https://skpathak.github.io/subject04/tumor.ply', 0.75, [0.294, 0.922, 0.557]),
+            loadPLY('https://skpathak.github.io/subject04/left_urinary.ply', 1, [0.957, 0.773, 0.0]),
+            loadPLY('https://skpathak.github.io/subject04/artery_mask.ply', 1, [0.871, 0.165, 0.224]),
         ]).then(() => {
             renderer.resetCamera(); // Adjust camera after all models are loaded
             renderWindow.render(); // Optionally force a render here
